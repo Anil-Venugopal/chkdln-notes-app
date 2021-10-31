@@ -6,6 +6,7 @@ import SideView from "./components/SideView";
 
 
 function App() {
+   //lets create Array of notes stored in state
   const [notes, setNotes] = useState(
     localStorage.notes ? JSON.parse(localStorage.notes) : []
   );
@@ -17,7 +18,7 @@ function App() {
 
   const onAddNote = () => {
     const newNote = {
-      id: uuid(),
+      id: uuid(),//To generate new random id evrytime lets use react-uuid
       title: "Untitled Note",
       body: "",
       lastModified: Date.now(),
