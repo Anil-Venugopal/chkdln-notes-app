@@ -28,7 +28,7 @@ const SideView = ({
             >
               <div className="sideview-note-title">
                 <strong>{title}</strong>
-                <button onClick={(e) => onDeleteNote(id)}>Delete</button>
+                <button onClick={(e) => onDeleteNote(id)}>DELETE</button>
               </div>
 
               <p>{body && body.substr(0, 100) + "..."}</p>
